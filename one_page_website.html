@@ -3,15 +3,16 @@
 <head>
 	<title>Adopt a Dog Today</title>
 	<meta charset="utf-8">
+	<link rel="stylesheet" href="./css/one_page_website.css">
 </head>
 <body>
 	<!--NAV-->
-		<div>
-			<div>
-				<ul>
+		<div class="wrap">
+			<div class="menu-box">
+				<ul class="menu">
 					<a href="#home" id="link"><li>HOME</li></a>
-					<a href="#photos"><li>PHOTOS</li></a>
-					<a href="#video"><li>VIDEO</li></a>
+					<a href="#photos"><li>MEET THE PUPS</li></a>
+					<a href="#video"><li>GET INVOLVED</li></a>
 					<a href="#contact"><li>ADOPT</li></a>
 				</ul>
 			</div>
@@ -21,153 +22,201 @@
 	<!--HOME-->
 		<div>
 			<div>
-				<div>
+				<div id="home">
 					<h1>Adopt Today</h1>
-						<p> Have a look at the pictures of the dogs and if you like one please contact us
-						to start the adoption process. Our staff will get back to you in 24 hours or less. 
-						Thank you for your interest in giving these pups a new home!!
-						</p>
+						<h2>Welcome to The_Dog_House.org!</h2>
+							<p>We are a no kill shelter! We usually house about 10 dogs maximum
+							in our home. We take these dogs into our dog-sanctuary for as long as it takes.
+							Our hope is that we can rehabilitate these dogs while we find them the perfect family and home!
+							<br>
+							<br>
+								Have a look at the pictures of the dogs and if you like one please contact us
+							to start the adoption process. Our staff will get back to you in 24 hours or less. 
+							Thank you for your interest in giving these pups a new home!!
+							</p>
 				</div>
 			</div>
 		</div>
 	<!--END HOME-->
 	
 	<!--Photos-->
-	<section>
-		<div id="photos">
-			<h1>Photos</h1>
-			<div>
+	<section id="photos">
+		<div class="gallery-box">
+			<h1>Meet The Pups</h1>
+			<div class="flex-container">
 			
 				<!--Photo Container 1-->
-				<div>
-					<div>
+				<div class="photo-box">
+					<div class="photo">
 						<img src="./photos/thumbs/dog_1.jpg" alt="Meet Barry">
-						<div>
+						<div class="photo-overlay">
 							<h3>Meet Barry</h3>
-							<p>Breed: Doberman-Hound <br>
-							Color:	White, Red<br>
-							Age: 1yr,1m<br>
-							Weight:	61.8 lbs	<br>
-							</p>
+							<h4>Breed: Doberman-Hound</h4>
+							<h4>Sex: F</h4>
+							<h4>Color:	White, Red</h4>
+							<h4>Age: 1yr,1m</h4>
+							<h4>Weight:	61.8 lbs</h4>
+							<div>
+								<h3>What my friends say about me:</h3>
+									<h5>I am inquisitive and high energy.</h5>
+									<h5>I love to play with my toys.</h5>
+									<h5>I learn quickly with rewards/treats!</h5>
+							</div>
 						</div>
 					</div>
 				</div>
 				<!--END PHOTO CONTAINER 1-->
 				
 				<!--Photo Container 2-->
-				<div>
-					<div>
+				<div class="photo-box">
+					<div class="photo">
 						<img src="./photos/thumbs/dog_2.jpg" alt="Meet Bridger">
-						<div>
+						<div class="photo-overlay">
 							<h3>Meet Bridger</h3>
-							<p>Breed: American Pitbull-Mix<br>
-							Sex: M <br>
-							Color:	Black, White<br>
-							Age: 2yr, 1m<br>
-							Weight:	56 lbs	<br>
-							</p>
+							<h4>Breed: American Pitbull-Mix</h4>
+							<h4>Sex: M</h4> 
+							<h4>Color:	Black, White</h4>
+							<h4>Age: 2yr, 1m</h4>
+							<h4>Weight:	56 lbs</h4>	
+							<div>
+								<h3>What my friends say about me:</h3>
+									<h5>I am very attentive and easily overstimulated!</h5>
+									<h5>I need positive outlets for my energy.</h5>
+									<h5>I love to go on long walks!</h5>
+							</div>
 						</div>
 					</div>
 				</div>
 				<!--END PHOTO CONTAINER 2-->
 				
 				<!--Photo Container 3-->
-				<div>
-					<div>
+				<div class="photo-box">
+					<div class="photo">
 						<img src="./photos/thumbs/dog_3.jpg" alt="Meet Coal">
-						<div>
+						<div class="photo-overlay">
 							<h3>Meet Coal</h3>
-							<p>Breed: American Pitbull-Mix <br>
-							Sex: M <br>
-							Color: Black, White<br>
-							Age: 4yrs<br>
-							Weight:	59 lbs	<br>
-							</p>
+							<h4>Breed: American Pitbull-Mix</h4> 
+							<h4>Sex: M</h4> 
+							<h4>Color: Black, White</h4>
+							<h4>Age: 4yrs</h4>
+							<h4>Weight:	59 lbs</h4>
+							<div>
+								<h3>What my friends say about me:</h3>
+									<h5>I am a learner! I respond well to positive reinforcement!</h5>
+									<h5>I know commands such as "sit", "lay", and "play dead"!</h5>
+									<h5>I like to nap mid-afternoon...</h5>
+							</div>
+							
 						</div>
 					</div>
 				</div>
 				<!--END PHOTO CONTAINER 3-->
 				
 				<!--Photo Container 4-->
-				<div>
-					<div>
+				<div class="photo-box">
+					<div class="photo">
 						<img src="./photos/thumbs/dog_4.jpg" alt="Meet Cooper">
-						<div>
+						<div class="photo-overlay">
 							<h3>Meet Cooper</h3>
-							<p>Breed: Hound <br>
-							Sex: M <br>
-							Color: Tri-color<br>
-							Age: 1yr, 6m<br>
-							Weight:	51 lbs	<br>
-							</p>
+							<h4>Breed: Hound</h4>
+							<h4>Sex: M</h4>
+							<h4>Color: Tri-color</h4>
+							<h4>Age: 1yr, 6m</h4>
+							<h4>Weight:	51 lbs</h4>
+							<div>
+								<h3>What my friends say about me:</h3>
+									<h5>I am a Reagle Beagle!!</h5>
+									<h5>I can be a bit shy and anxious around new people.</h5>
+									<h5>I love to play fetch!</h5>
+							</div>
 						</div>
 					</div>
 				</div>
 				<!--END PHOTO CONTAINER 4-->
 				
 				<!--Photo Container 5-->
-				<div>
-					<div>
+				<div class="photo-box">
+					<div class="photo">
 						<img src="./photos/thumbs/dog_5.jpg" alt="Meet Gracie">
-						<div>
+						<div class="photo-overlay">
 							<h3>Meet Gracie</h3>
-							<p>Breed: American Pitbull-Mix <br>
-							Sex: F <br>
-							Color:Lilac, Blue<br>
-							Age: 1yr<br>
-							Weight:	63 lbs	<br>
-							</p>
+							<h4>Breed: American Pitbull-Mix</h4>
+							<h4>Sex: F </h4>
+							<h4>Color: Lilac, Blue</h4>
+							<h4>Age: 1yr</h4>
+							<h4>Weight:	63 lbs</h4>	
+							<div>
+								<h3>What my friends say about me:</h3>
+									<h5>I love to romp around and play!</h5>
+									<h5>I can be over-aggressive.</h5>
+									<h5>I get nervous and shy around new people/surrroundings.</h5>
+							</div>
 						</div>
 					</div>
 				</div>
 				<!--END PHOTO CONTAINER 5-->
 				
 				<!--Photo Container 6-->
-				<div>
-					<div>
+				<div class="photo-box">
+					<div class="photo">
 						<img src="./photos/thumbs/dog_6.jpg" alt="Meet Hamish">
-						<div>
+						<div class="photo-overlay">
 							<h3>Meet Hamish</h3>
-							<p>Breed: Lab-Shepherd <br>
-							Sex: M <br>
-							Color: Yellow<br>
-							Age: 6yrs, 2m<br>
-							Weight:	61 lbs	<br>
-							</p>
+							<h4>Breed: Lab-Shepherd</h4>
+							<h4>Sex: M</h4>
+							<h4>Color: Yellow</h4>
+							<h4>Age: 6yrs, 2m</h4>
+							<h4>Weight:	61 lbs</h4>
+							<div>
+								<h3>What my friends say about me:</h3>
+									<h5>I don't like cats!!</h5>
+									<h5>I have a history of biting.</h5>
+									<h5>I may be an older pup, but am still high energy!</h5>
+							</div>
 						</div>
 					</div>
 				</div>
 				<!--END PHOTO CONTAINER 6-->
 				
 				<!--Photo Container 7-->
-				<div>
-					<div>
+				<div class="photo-box">
+					<div class="photo">
 						<img src="./photos/thumbs/dog_7.jpg" alt="Meet Kobe">
-						<div>
+						<div class="photo-overlay">
 							<h3>Meet Kobe</h3>
-							<p>Breed: German Shepherd-Husky <br>
-							Sex: M <br>
-							Color: Tan, Black<br>
-							Age: 2yrs, 1m<br>
-							Weight: 90 lbs	<br>
-							</p>
+							<h4>Breed: German Shepherd-Husky</h4>
+							<h4>Sex: M</h4>
+							<h4>Color: Tan, Black></h4>
+							<h4>Age: 2yrs, 1m</h4>
+							<h4>Weight: 90 lbs</h4>
+							<div>
+								<h3>What my friends say about me:</h3>
+									<h5>I am smart, inquisitive, and learn quickly!</h5>
+									<h5>I am very protective of my family.</h5>
+									<h5>I am a Lakers fan for life!</h5>
+							</div>
 						</div>
 					</div>
 				</div>
 				<!--END PHOTO CONTAINER 7-->
 				
 				<!--Photo Container 8-->
-				<div>
-					<div>
+				<div class="photo-box">
+					<div class="photo">
 						<img src="./photos/thumbs/dog_8.jpg" alt="Meet Scrambles">
-						<div>
+						<div class="photo-overlay">
 							<h3>Meet Scrambles</h3>
-							<p>Breed: Lab-Shepherd  <br>
-							Sex: F <br>
-							Color: White, Black<br>
-							Age: 4yrs<br>
-							Weight:	64 lbs	<br>
-							</p>
+							<h4>Breed: Lab-Shepherd </h4>
+							<h4>Sex: F</h4>
+							<h4>Color: White, Black</h4>
+							<h4>Age: 4yrs</h4>
+							<h4>Weight:	64 lbs</h4>
+							<div>
+								<h3>What my friends say about me:</h3>
+									<h5>I know some basic commands such as "Sit", and "Down"!</h5>
+									<h5>I respond well to positive reinforcement using treats/rewards.</h5>
+									<h5>I would flourish in a calm low-traffic home.</h5>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -184,8 +233,13 @@
 	<section>
 		<div id="video">
 			<div>
-				<h2>Not sure what video to put here</h2>
-				<p>Link to video</p>
+				<h1>Get Involved!</h1>
+				<div>
+					<h2>PETA<br>Adopt-a-thon</h2>
+				</div>
+					<center><iframe width="945" height="532" src="https://www.youtube.com/embed/4orwMyBu4P0" frameborder="0"
+				 	allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+				 	allowfullscreen></iframe></center>
 			</div>
 		</div>
 	</section>
@@ -196,8 +250,8 @@
 	<section>
 		<div id="contact">
 			<div>
-				<h3>Contact Information</h3>
-				<p>If you are interested in adopting enter your information here:</p><br>
+				<h1>Contact Information</h1>
+				<h2>If you are interested in adopting enter your information here:</h2><br>
 				<div>
 					<form action="" method="post">
 					Name: <input type="text" name="Name"><br>
