@@ -3,6 +3,8 @@
 <head>
 	<title>Adopt a Dog Today</title>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale= 1">
+	<script src="./JS/main.js" defer></script>
 	<link rel="stylesheet" href="./css/one_page_website.css">
 </head>
 <body>
@@ -46,10 +48,10 @@
 			<div class="flex-container">
 			
 				<!--Photo Container 1-->
-				<div class="photo-box">
+				<div class="photo-box" >
 					<div class="photo">
-						<img src="./photos/thumbs/dog_1.jpg" alt="Meet Barry">
-						<div class="photo-overlay">
+						<img src="./photos/thumbs/dog_1.jpg" alt="Meet Barry" >
+						<div class="photo-overlay" onclick="openModal(); currentSlide(1)">
 							<h3>Meet Barry</h3>
 							<h4>Breed: Doberman-Hound</h4>
 							<h4>Sex: F</h4>
@@ -68,10 +70,10 @@
 				<!--END PHOTO CONTAINER 1-->
 				
 				<!--Photo Container 2-->
-				<div class="photo-box">
-					<div class="photo">
+				<div class="photo-box" >
+					<div class="photo" >
 						<img src="./photos/thumbs/dog_2.jpg" alt="Meet Bridger">
-						<div class="photo-overlay">
+						<div class="photo-overlay" onclick="openModal();currentSlide(2)">
 							<h3>Meet Bridger</h3>
 							<h4>Breed: American Pitbull-Mix</h4>
 							<h4>Sex: M</h4> 
@@ -93,7 +95,7 @@
 				<div class="photo-box">
 					<div class="photo">
 						<img src="./photos/thumbs/dog_3.jpg" alt="Meet Coal">
-						<div class="photo-overlay">
+						<div class="photo-overlay" onclick="openModal();currentSlide(3)">
 							<h3>Meet Coal</h3>
 							<h4>Breed: American Pitbull-Mix</h4> 
 							<h4>Sex: M</h4> 
@@ -116,7 +118,7 @@
 				<div class="photo-box">
 					<div class="photo">
 						<img src="./photos/thumbs/dog_4.jpg" alt="Meet Cooper">
-						<div class="photo-overlay">
+						<div class="photo-overlay" onclick="openModal();currentSlide(4)">
 							<h3>Meet Cooper</h3>
 							<h4>Breed: Hound</h4>
 							<h4>Sex: M</h4>
@@ -138,7 +140,7 @@
 				<div class="photo-box">
 					<div class="photo">
 						<img src="./photos/thumbs/dog_5.jpg" alt="Meet Gracie">
-						<div class="photo-overlay">
+						<div class="photo-overlay" onclick="openModal();currentSlide(5)">
 							<h3>Meet Gracie</h3>
 							<h4>Breed: American Pitbull-Mix</h4>
 							<h4>Sex: F </h4>
@@ -160,7 +162,7 @@
 				<div class="photo-box">
 					<div class="photo">
 						<img src="./photos/thumbs/dog_6.jpg" alt="Meet Hamish">
-						<div class="photo-overlay">
+						<div class="photo-overlay" onclick="openModal();currentSlide(6)">
 							<h3>Meet Hamish</h3>
 							<h4>Breed: Lab-Shepherd</h4>
 							<h4>Sex: M</h4>
@@ -182,7 +184,7 @@
 				<div class="photo-box">
 					<div class="photo">
 						<img src="./photos/thumbs/dog_7.jpg" alt="Meet Kobe">
-						<div class="photo-overlay">
+						<div class="photo-overlay" onclick="openModal();currentSlide(7)">
 							<h3>Meet Kobe</h3>
 							<h4>Breed: German Shepherd-Husky</h4>
 							<h4>Sex: M</h4>
@@ -204,7 +206,7 @@
 				<div class="photo-box">
 					<div class="photo">
 						<img src="./photos/thumbs/dog_8.jpg" alt="Meet Scrambles">
-						<div class="photo-overlay">
+						<div class="photo-overlay" onclick="openModal();currentSlide(8)">
 							<h3>Meet Scrambles</h3>
 							<h4>Breed: Lab-Shepherd </h4>
 							<h4>Sex: F</h4>
@@ -227,6 +229,100 @@
 	</section>
 	
 	<!--END PHOTOS-->
+
+
+	<!--Start Modal Photos Here-->
+
+	<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+	<span class="close cursor" onclick="closeModal()">&times;</span>
+	<div class="modal-content">
+  
+	  <div class="mySlides">
+		<div class="numbertext">1 / 8</div>
+		<img src="./Photos/thumbs/dog_1.jpg" style="width:100%">
+	  </div>
+  
+	  <div class="mySlides">
+		<div class="numbertext">2 / 8</div>
+		<img src="./Photos/thumbs/dog_2.jpg" style="width:100%">
+	  </div>
+  
+	  <div class="mySlides">
+		<div class="numbertext">3 / 8</div>
+		<img src="./Photos/thumbs/dog_3.jpg" style="width:100%">
+	  </div>
+  
+	  <div class="mySlides">
+		<div class="numbertext">4 / 8</div>
+		<img src="./Photos/thumbs/dog_4.jpg" style="width:100%">
+	  </div>
+
+	  <div class="mySlides">
+		<div class="numbertext">5 / 8</div>
+		<img src="./Photos/thumbs/dog_5.jpg" style="width:100%">
+	  </div>
+
+	  <div class="mySlides">
+		<div class="numbertext">6 / 8</div>
+		<img src="./Photos/thumbs/dog_6.jpg" style="width:100%">
+	  </div>
+
+	  <div class="mySlides">
+		<div class="numbertext">7 / 8</div>
+		<img src="./Photos/thumbs/dog_7.jpg" style="width:100%">
+	  </div>
+
+	  <div class="mySlides">
+		<div class="numbertext">8 / 8</div>
+		<img src="./Photos/thumbs/dog_8.jpg" style="width:100%">
+	  </div>
+  
+	  <!-- Next/previous controls -->
+	  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+	  <!-- Caption text -->
+	  <div class="caption-container">
+		<p id="caption"></p>
+	  </div>
+  
+	  <!-- Thumbnail image controls -->
+	  <div class="column">
+		<img class="demo" src="./Photos//thumbs/dog_1.jpg" onclick="currentSlide(1)" alt="Meet Barry">
+	  </div>
+  
+	  <div class="column">
+		<img class="demo" src="./Photos/thumbs/dog_2.jpg" onclick="currentSlide(2)" alt="Meet Bridger">
+	  </div>
+  
+	  <div class="column">
+		<img class="demo" src="./Photos/thumbs/dog_3.jpg" onclick="currentSlide(3)" alt="Meet Coal">
+	  </div>
+  
+	  <div class="column">
+		<img class="demo" src="./Photos/thumbs/dog_4.jpg" onclick="currentSlide(4)" alt="Meet Cooper">
+	  </div>
+
+	  <div class="column">
+		<img class="demo" src="./Photos/thumbs/dog_5.jpg" onclick="currentSlide(5)" alt="Meet Gracie">
+	  </div>
+
+	  <div class="column">
+		<img class="demo" src="./Photos/thumbs/dog_6.jpg" onclick="currentSlide(6)" alt="Meet Hamish">
+	  </div>
+
+	  <div class="column">
+		<img class="demo" src="./Photos/thumbs/dog_7.jpg" onclick="currentSlide(7)" alt="Meet Kobe">
+	  </div>
+
+	  <div class="column">
+		<img class="demo" src="./Photos/thumbs/dog_8.jpg" onclick="currentSlide(8)" alt="Meet Scrambles">
+	  </div>
+	</div>
+  </div>
+
+	
 	
 	<!--VIDEO OF -->
 	
@@ -268,9 +364,9 @@
 	<!--END CONTACT-->
 	
 	<!--FOOTER-->
-	<div>
+	<div >
 		<div><br>
-			www.The_Dog_House.org
+			<h2>www.The_Dog_House.org</h2>>
 		</div>
 	</div>
 	
